@@ -1,0 +1,49 @@
+{% extends "template.html" %}
+{% block Conteúdo %}
+
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+
+<div class="d-inline">
+   <a class="btn btn-custom mx-3" href="{{ url_for('login') }}">Login</a>
+   <a class="btn btn-custom mx-3" href="{{ url_for('logout') }}">Logout</a>
+   <a class="btn btn-custom mx-3" href="{{ url_for('novo') }}">Novo Filme</a>
+</div>
+
+<form action="{{ url_for('pesquisar') }}" method="GET">
+   <div class="input-group mb-3">
+       <input type="text" class="form-control" placeholder="Pesquisar..." name="query">
+       <div class="input-group-append">
+           <button class="btn btn-outline-secondary" type="submit">Pesquisar</button>
+       </div>
+   </div>
+</form>
+
+<table class="table table-striped table-responsive table-bordered" id="tabela-filmes">
+    <thead class="thead-default">
+        <tr>
+            <th>Nome</th>
+            <th>Sinopse</th>
+            <th>Plataforma</th>
+            <th>Funcionalidades</th>
+        </tr>
+    </thead>
+    <tbody>
+        {% for filme in filmes %}
+        <tr>
+            <td>{{ filme.nome }}</td>
+            <td>{{ filme.sinopse }}</td>
+            <td>{{ filme.plataforma.nome }}</td>
+            <td>
+                <div class="btn-group" role="group">
+                    <a href="{{ url_for('editar', id=filme.id) }}" class="link-editar">Editar</a>
+                    <a href="{{ url_for('deletar', id=filme.id) }}" class="link-deletar">Deletar</a>
+                </div>
+            </td>
+        </tr>
+        {% endfor %}
+    </tbody>
+</table>
+{% endblock %}
+
+<!-- Bootstrap JS (opcional) -->
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>

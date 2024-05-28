@@ -1,0 +1,151 @@
+body {
+    padding-top: 40px;
+}
+
+.btn {
+    margin-bottom: 50px;
+}
+
+.container {
+    border-radius: 4px;
+    margin: auto;
+    width: 80%;
+}
+
+.little-container {
+    width: 40%;
+    margin: auto;
+}
+
+figcaption {
+    text-align: center;
+    margin: 3px auto;
+}
+
+.fileContainer {
+    overflow: hidden;
+    position: relative;
+}
+
+.fileContainer [type=file] {
+    cursor: pointer;
+    display: block;
+    font-size: 999px;
+    filter: alpha(opacity=0);
+    min-height: 100%;
+    min-width: 100%;
+    opacity: 0;
+    position: absolute;
+    right: 0;
+    text-align: right;
+    top: 0;
+}
+
+td {
+    text-align: center;
+}
+
+.formularioFilme {
+    display: flex;
+}
+
+.formularioImagem {
+    margin-right: 16px
+}
+
+.buttons {
+    margin-top: 16px
+}
+
+.inputBox {
+    width: 700px;
+}
+
+.inputsJogo {
+    width: 100%;
+    margin-left: 1em;
+    margin-bottom: 1em;
+}
+
+
+/* Estilo para a barra de pesquisa */
+.input-group.mb-3 {
+    width: 80%; /* Define a largura da barra de pesquisa */
+    margin-bottom: 15px; /* Adiciona margem inferior */
+}
+
+.form-control {
+    border-radius: 30px; /* Borda mais arredondada para o campo de pesquisa */
+}
+
+/* Estilo para o botão de pesquisa */
+.btn-outline-secondary {
+    border-top-left-radius: 0; /* Remove a borda arredondada superior esquerda */
+    border-bottom-left-radius: 0; /* Remove a borda arredondada inferior esquerda */
+    border-top-right-radius: 30px; /* Borda mais arredondada superior direita */
+    border-bottom-right-radius: 30px; /* Borda mais arredondada inferior direita */
+}
+
+/* Estilo para o contêiner do botão de pesquisa */
+.input-group-append {
+    margin-left: -1px; /* Adiciona uma pequena margem negativa para remover o espaçamento */
+}
+
+
+/* Estilo para a tabela de filmes */
+#tabela-filmes {
+    border-radius: 10px; /* Borda arredondada para a tabela */
+    overflow: hidden; /* Oculta a barra de rolagem horizontal */
+}
+
+/* Estilo para as células da tabela */
+#tabela-filmes td {
+    vertical-align: middle; /* Centraliza verticalmente o conteúdo das células */
+}
+
+
+
+
+
+
+/* Estilo para os botões de editar e deletar */
+.link-editar, .link-deletar {
+    display: inline-block; /* Torna os links em elementos de bloco */
+    padding: 8px 12px; /* Adiciona preenchimento interno */
+    margin-right: 5px; /* Adiciona uma margem à direita para separar os botões */
+    border: 1px solid #7d726c; /* Adiciona uma borda */
+    border-radius: 4px; /* Adiciona bordas arredondadas */
+    background-color: #ffffff; /* Cor de fundo */
+    color: #343a40; /* Cor do texto */
+    text-decoration: none; /* Remove sublinhado do texto */
+}
+
+/* Estilo quando o cursor passa por cima dos botões */
+.link-editar:hover, .link-deletar:hover {
+    background-color: #0056b3; /* Altera a cor de fundo ao passar o mouse */
+    color: #ffffff; /* Altera a cor do texto ao passar o mouse */
+}
+
+
+
+
+
+/* Estilo para os botões personalizados */
+.btn-custom {
+    background-color: #007bff; /* Altera a cor de fundo para azul */
+    color: #fff; /* Altera a cor do texto para branco */
+    border: 2px solid #007bff; /* Adiciona uma borda sólida de 2px na cor azul */
+    border-radius: 4px; /* Adiciona uma pequena borda arredondada */
+    padding: 8px 16px; /* Adiciona um preenchimento interno ao botão para espaçamento */
+}
+
+/* Estilo para o hover dos botões */
+.btn-custom:hover {
+    background-color: #0056b3; /* Altera a cor de fundo quando o botão é hover para um tom mais escuro de azul */
+    border-color: #0056b3; /* Altera a cor da borda no hover para combinar com a cor de fundo */
+    color: #fff; /* Mantém a cor do texto branca */
+}
+
+
+
+

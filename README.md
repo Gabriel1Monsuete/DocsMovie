@@ -1,0 +1,1 @@
+Para estalar o Projeto utilizar o programa do PYcash
